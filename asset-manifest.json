@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GitHubRepositoryListProject/static/css/main.e32938fd.css",
+    "main.js": "/GitHubRepositoryListProject/static/js/main.9ba45b41.js",
+    "index.html": "/GitHubRepositoryListProject/index.html",
+    "main.e32938fd.css.map": "/GitHubRepositoryListProject/static/css/main.e32938fd.css.map",
+    "main.9ba45b41.js.map": "/GitHubRepositoryListProject/static/js/main.9ba45b41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e32938fd.css",
+    "static/js/main.9ba45b41.js"
+  ]
+}
