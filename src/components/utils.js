@@ -1,13 +1,13 @@
-const currentDate = new Date();
 
 export const getOneMonthBack = () => {
-    currentDate.setMonth(currentDate.getMonth() - 1);
-    const oneMonthAgoDate = currentDate.getFullYear() + '-' + (currentDate.getMonth() + 1).toString().padStart(2, '0') + '-' + currentDate.getDate().toString().padStart(2, '0');
-    return oneMonthAgoDate;
+    const currentDate = new Date();
+    const date30DaysAgo = new Date(currentDate.getTime() - 30 * 24 * 60 * 60 * 1000);
+    const date30DaysAgoStr = date30DaysAgo.toISOString().split('T')[0];
+    return date30DaysAgoStr;
 }
 
-export const calculateDaysRemaining = (targetDate, currentDate) => {
-    const timeDifference = currentDate - targetDate;
-    const daysRemaining = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+export const calculateDaysRemaining = (targetDate) => {
+    const dateSubmited = Date.parse(new Date()) - Date.parse(targetDate);
+    const daysRemaining = Math.floor(dateSubmited / (1000 * 60 * 60 * 24));
     return daysRemaining;
 };

@@ -9,20 +9,21 @@ export const Repository = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
 
-  const fetchData = async (page) => {
-    try {
-      const data = await fetchApiData(page);
-      setRepoList((prevRepoList) => [...prevRepoList, ...data.items]);
+  const fetchData = (page) => {
+    fetchApiData(page).then(response => {
+      setRepoList((prevRepoList) => [...prevRepoList, ...response.items]);
       setLoading(false);
-    } catch (error) {
-      console.error(error);
-      setLoading(false);
-    }
-  };
+    })
+      .catch(error => {
+        console.error(error);
+        setLoading(false);
+      })
+  }
 
   useEffect(() => {
     fetchData(currentPage);
   }, [currentPage]);
+
 
   const renderBoxes = () => {
     return repoList.map((item) => (

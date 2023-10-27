@@ -6,7 +6,7 @@
 }
 
 .cardContainer {
-  width: 70% !important;
+  width: 80% !important;
   border: 2px solid #fff;
   margin-top: 24px;
   border-radius: 8px;
@@ -21,17 +21,17 @@
 }
 
 .header {
-  font-size: xx-large !important;
   font-weight: bolder !important;
 }
 
 .description {
   margin: 12px 0 !important;
-  font-size: medium !important;
+  font-size: 2.5vh !important;
 }
 
 .badgeContainer {
   display: flex;
+  margin-top: 18px !important;
 }
 
 .chip {
