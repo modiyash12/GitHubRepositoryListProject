@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/GitHubRepositoryListProject/static/css/main.6ec771d2.css",
-    "main.js": "/GitHubRepositoryListProject/static/js/main.e9e35689.js",
+    "main.css": "/GitHubRepositoryListProject/static/css/main.de5257a9.css",
+    "main.js": "/GitHubRepositoryListProject/static/js/main.e396f870.js",
     "index.html": "/GitHubRepositoryListProject/index.html",
-    "main.6ec771d2.css.map": "/GitHubRepositoryListProject/static/css/main.6ec771d2.css.map",
-    "main.e9e35689.js.map": "/GitHubRepositoryListProject/static/js/main.e9e35689.js.map"
+    "main.de5257a9.css.map": "/GitHubRepositoryListProject/static/css/main.de5257a9.css.map",
+    "main.e396f870.js.map": "/GitHubRepositoryListProject/static/js/main.e396f870.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ec771d2.css",
-    "static/js/main.e9e35689.js"
+    "static/css/main.de5257a9.css",
+    "static/js/main.e396f870.js"
   ]
 }
