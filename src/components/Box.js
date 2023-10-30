@@ -26,9 +26,9 @@ export const Box = (props) => {
                     <Grid item xs={12} md={3}>
                         <img src={props.item.owner.avatar_url} className='imgContainer' alt="Owner Avatar" />
                     </Grid>
-                    <Grid item xs={12} md={9} className='infoContainer'>
+                    <Grid item xs={12} md={9}>
                         <Typography variant='h6' className='header'>{props.item.name}</Typography>
-                        <Typography className='description'>{props.item.description}</Typography>
+                        <Typography variant='h7' className='description'>{props.item.description}</Typography>
                         <div className="badgeContainer">
                             <Grid container justifyContent="space-between" spacing={2}>
                                 <Grid item xs={12} md={6}>
